@@ -1,4 +1,4 @@
-# Hi there 👋 My hands-on skills:
+# Hi there 👋 I have hands-on experience with:
 
 <!--
 **Dimab92/Dimab92** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -32,3 +32,21 @@ Installed and configured a UNIX OS on a virtual machine
 Performed system update and upgrade via command line
 
 Installed and configured all necessary tools for server operation
+
+## Bash Scripting:
+Developed Bash scripts to automate cloning of GitHub repositories via SSH
+
+Created versioned .tar.gz backups with dynamic filename generation (version_1.0.0, 1.0.1, etc.)
+
+Implemented logic for version incrementing, backup retention (--max-backups), and batch execution (--max-runs)
+
+Used jq to create and update versions.json tracking backup metadata (version, size, date)
+
+Managed file operations (compression, deletion, creation) entirely through Bash
+
+## Docker and Containerization:
+Authored Dockerfile to containerize the backup script, enabling consistent execution environments.
+
+Ensured secure handling of sensitive data through Docker volumes and environment variables.
+
+Configured container to persist backup files to the host system using mounted volumes.
