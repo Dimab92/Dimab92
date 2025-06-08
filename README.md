@@ -24,7 +24,6 @@ Here are some ideas to get you started:
 [![AWS](https://img.shields.io/badge/AWS-IAM%20%7C%20EC2%20%7C%20Elastic%20IP%20%7C%20ECR%20%7C%20S3-FF9900?logo=amazonaws&logoColor=white)]()
 
 ## Virtualization and Bash:
-
 Hypervisors: VirtualBox (installation and configuration)
 
 Installed and configured a UNIX OS on a virtual machine
@@ -34,19 +33,25 @@ Performed system update and upgrade via command line
 Installed and configured all necessary tools for server operation
 
 ## Bash Scripting:
-Developed Bash scripts to automate cloning of GitHub repositories via SSH
+Writing Bash scripts to automate daily tasks and make work easier.
 
-Created versioned .tar.gz backups with dynamic filename generation (version_1.0.0, 1.0.1, etc.)
+Created one script that:
 
-Implemented logic for version incrementing, backup retention (--max-backups), and batch execution (--max-runs)
+Clones GitHub repository using SSH
 
-Used jq to create and update versions.json tracking backup metadata (version, size, date)
+Makes compressed backup files with version numbers
 
-Managed file operations (compression, deletion, creation) entirely through Bash
+Tracks backup info in a JSON file using jq
+
+Deletes old backups if needed
+
+Can run many backups in one go
 
 ## Docker and Containerization:
-Authored Dockerfile to containerize the backup script, enabling consistent execution environments.
+Wrote a Dockerfile to run the backup script inside a container
 
-Ensured secure handling of sensitive data through Docker volumes and environment variables.
+Used Docker volumes to keep backup files safe and outside the container
 
-Configured container to persist backup files to the host system using mounted volumes.
+Used environment variables to protect sensitive data
+
+Backups are saved to the host system so they are not lost when the container stops
