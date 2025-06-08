@@ -14,14 +14,17 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-[![Bash](https://img.shields.io/badge/Bash-Bash%20Scripting-4EAA25?logo=gnu-bash&logoColor=white)]()
-[![Virtualization](https://img.shields.io/badge/Virtualization-VirtualBox%20%7C%20VM-blueviolet?logo=virtualbox&logoColor=white)]()
-[![Apache](https://img.shields.io/badge/Apache-HTTP%20Server-D22128?logo=apache&logoColor=white)]()
-[![Nginx](https://img.shields.io/badge/Nginx-Web%20Server-009639?logo=nginx&logoColor=white)]()
-[![Networking](https://img.shields.io/badge/Networking-VPC%20%7C%20Security%20Groups%20%7C%20Ports-0061a8?logo=networkx&logoColor=white)]()
-[![Docker](https://img.shields.io/badge/Docker-Docker%20Compose-2496ED?logo=docker&logoColor=white)]()
-[![Git & GitHub](https://img.shields.io/badge/Git%20%26%20GitHub-GitHub%20Actions-2088FF?logo=github&logoColor=white)]()
-[![AWS](https://img.shields.io/badge/AWS-IAM%20%7C%20EC2%20%7C%20Elastic%20IP%20%7C%20ECR%20%7C%20S3-FF9900?logo=amazonaws&logoColor=white)]()
+![Bash](https://img.shields.io/badge/Bash-7ED957?logo=gnu-bash&logoColor=white&style=for-the-badge&logoWidth=30) 
+![Bash scripting](https://img.shields.io/badge/Bash%20Scripting-2E8B57?logo=gnubash&logoColor=white&style=for-the-badge&logoWidth=30) 
+![Git](https://img.shields.io/badge/Git-E5534B?logo=git&logoColor=white&style=for-the-badge&logoWidth=30) 
+![GitHub](https://img.shields.io/badge/GitHub-24292E?logo=github&logoColor=white&style=for-the-badge&logoWidth=30) 
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0078D7?logo=githubactions&logoColor=white&style=for-the-badge&logoWidth=30) 
+![Docker](https://img.shields.io/badge/Docker-1CA7EC?logo=docker&logoColor=white&style=for-the-badge&logoWidth=30) 
+![Docker Compose](https://img.shields.io/badge/Docker%20Compose-0052CC?logo=docker&logoColor=white&style=for-the-badge&logoWidth=30) 
+![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white&style=for-the-badge&logoWidth=30)
+
+
+
 
 ## Virtualization and Bash:
 Hypervisors: VirtualBox (installation and configuration)
