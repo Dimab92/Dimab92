@@ -28,29 +28,16 @@ Here are some ideas to get you started:
 ![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white&style=for-the-badge&logoWidth=30)
 
 
-## Virtualization and Bash:
-Hypervisors: VirtualBox (installation and configuration)
+## Virtualization | Bash and Bash Scripting:
+Hypervisors: Experience with VirtualBox — installation, configuration, and management of virtual machines.
 
-Installed and configured a UNIX OS on a virtual machine
+Installed and configured UNIX-based OS in a virtualized environment.
 
-Performed system update and upgrade via command line
+Performed system updates and package upgrades using the command line.
 
-Installed and configured all necessary tools for server operation
+Set up and configured essential tools required for server functionality.
 
-## Bash Scripting:
-Writing Bash scripts to automate daily tasks and make work easier.
-
-Created one script that:
-
-Clones GitHub repository using SSH
-
-Makes compressed backup files with version numbers
-
-Tracks backup info in a JSON file using jq
-
-Deletes old backups if needed
-
-Can run many backups in one go
+Wrote Bash scripts to automate routine tasks like backups, version tracking, and repository management 
 
 ## Docker and Containerization:
 Wrote a Dockerfile to run the backup script inside a container
@@ -165,3 +152,61 @@ CI/CD Integration with GitHub:
 Connected GitHub to AWS using OIDC (OpenID Connect) for secure, token-based access (no secrets exposed)
 
 Integrated AWS services into CI/CD pipeline using environment-specific roles
+
+## Cloud Deployment & Automation:
+Automated the full deployment pipeline from GitHub to cloud VM using Docker and GitHub Actions.
+
+Docker Compose (Production):
+
+Created docker-compose-prod.yaml to deploy production-ready services (Nginx, Backend, Frontend) using prebuilt images from private container registry
+
+Ensured separation of development and production environments
+
+## Infrastructure as Code (IaC) with Terraform:
+Provisioned production-grade infrastructure on AWS using Terraform with focus on scalability, automation, and cost-efficiency (Free Tier).
+
+### Key Components Deployed:
+
+ECS Cluster: Created ECS cluster terraform-ecs-cluster-$GITHUB_USERNAME with EC2 capacity provider and autoscaling group (bootstrapped via user data)
+
+Containerized Task Definition: Deployed multi-container task with:
+
+Frontend
+
+Backend
+
+Nginx
+
+PostgreSQL database
+
+Security Groups: Designed using least-privilege principle
+
+Application Load Balancer (ALB): Configured listener rules and health checks for seamless routing to ECS tasks
+
+### State Management:
+
+Stored Terraform state in S3
+
+Enabled state locking with DynamoDB for safe team collaboration
+
+### CI/CD Integration:
+
+Integrated GitHub Actions to:
+
+Trigger deployment on push to main or workflow_dispatch
+
+Push Docker images to ECR
+
+Update ECS task and service without downtime
+
+Retained workflow naming for consistent automation control
+
+### Best Practices:
+
+Defined Terraform version for stability
+
+Used cost-effective Free Tier AWS instances
+
+Removed old EC2 + Elastic IP setup after migration to ECS
+
+Application successfully served via Load Balancer DNS
