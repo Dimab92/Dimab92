@@ -29,15 +29,17 @@ Here are some ideas to get you started:
 
 
 ## Virtualization | Bash and Bash Scripting:
-Hypervisors: Experience with VirtualBox — installation, configuration, and management of virtual machines.
+VirtualBox hypervisor: installation, configuration, and management of virtual machines
 
-Installed and configured UNIX-based OS in a virtualized environment.
+Installing and configuring UNIX-based OS in a virtualized environment
 
-Performed system updates and package upgrades using the command line.
+Performing system updates and package upgrades using the command line
 
-Set up and configured essential tools required for server functionality.
+Setting up and configuring essential tools required for server functionality
 
-Wrote Bash scripts to automate routine tasks like backups, version tracking, and repository management 
+Experience writing Bash scripts to automate routine tasks like backups, cron jobs, and system maintenance
+
+Troubleshooting: identifying and resolving system, network, and application issues to ensure smooth operations
 
 ## Docker and Containerization:
 Wrote a Dockerfile to run the backup script inside a container
