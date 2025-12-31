@@ -41,16 +41,7 @@ Experience writing Bash scripts to automate routine tasks like backups, cron job
 
 Troubleshooting: identifying and resolving system, network, and application issues to ensure smooth operations
 
-## Docker and Containerization:
-Wrote a Dockerfile to run the backup script inside a container
-
-Used Docker volumes to keep backup files safe and outside the container
-
-Used environment variables to protect sensitive data
-
-Backups are saved to the host system so they are not lost when the container stops
-
-## Docker Compose:
+## Docker and Docker Compose:
 Created Dockerfiles for backend and frontend applications
 Built multi-container architecture using Docker Compose
 
