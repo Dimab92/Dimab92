@@ -42,8 +42,8 @@ Experience writing Bash scripts to automate routine tasks like backups, cron job
 Troubleshooting: identifying and resolving system, network, and application issues to ensure smooth operations
 
 ## Docker and Docker Compose:
-Created Dockerfiles for backend and frontend applications
-Built multi-container architecture using Docker Compose
+Full Dockerization of the application with Nginx configured as a reverse proxy
+Building multi-container architecture using Docker Compose
 
 Configured services for:
 
@@ -54,11 +54,6 @@ Frontend app
 PostgreSQL database
 
 Nginx as reverse proxy
-
-Wrote Nginx config to route requests between frontend and backend
-Used environment variables to manage settings across services
-Connected services using Docker networks
-Mapped ports to access the app in browser
 
 ## CI/CD with GitHub Actions:
 Created pipelines for backend, frontend, nginx, and backup using GitHub Actions
