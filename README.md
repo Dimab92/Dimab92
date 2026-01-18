@@ -43,6 +43,7 @@ Troubleshooting: identifying and resolving system, network, and application issu
 
 ## Docker and Docker Compose:
 Full Dockerization of the application with Nginx configured as a reverse proxy
+
 Building multi-container architecture using Docker Compose
 
 Configured services for:
