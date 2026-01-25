@@ -42,7 +42,7 @@ Experience writing Bash scripts to automate routine tasks like backups, cron job
 Troubleshooting: identifying and resolving system, network, and application issues to ensure smooth operations
 
 ## Docker and Docker Compose:
-Full Dockerization of the application with Nginx configured as a reverse proxy
+Full Dockerization of the application with Nginx or Traefik configured as a reverse proxy
 
 Building multi-container architecture using Docker Compose
 
@@ -54,54 +54,14 @@ Frontend app
 
 PostgreSQL database
 
-Nginx as reverse proxy
+Nginx or Traefik as reverse proxy
 
-## CI/CD with GitHub Actions:
-Created pipelines for backend, frontend, nginx, and backup using GitHub Actions
+## GitHub Actions:
+Creating CI pipelines for backend, frontend, nginx, traefik, custom scripts using GitHub Actions:
 
-For each component:
+Covering the full CI flow: code checkout, linting, testing, Docker image build, and saving images as artifacts
 
-Wrote separate workflows triggered by code changes (push/PR to specific folders)
-
-Used workflow_dispatch to allow manual launch with choice of runner
-
-Configured support for both GitHub-hosted and self-hosted runners
-
-Added custom names and dropdown menu for clarity and flexibility
-
-Backend pipeline:
-
-Linting with ruff
-
-Running tests with python manage.py test and env variables
-
-Building Docker image with two tags: latest and short Git SHA
-
-Saving Docker image as artifact (1-day retention)
-
-Frontend pipeline:
-
-Linting with npm run lint
-
-Testing with npm run test
-
-Building Docker image tagged latest
-
-Saving image as artifact (1-day retention)
-
-Nginx pipeline:
-
-Building Docker image with latest and short Git SHA tags
-
-Saving image as artifact (1-day retention)
-
-Backup pipeline:
-
-Running backup.sh script
-
-Checking versions.json from previous artifact and appending data
-
-Saving both backup archive and updated versions.json as separate artifacts (5-day retention)
+Configuring support for both GitHub-hosted and self-hosted runners, following security and CI best practices.
 
 ## Cloud & AWS Services:
 Configured and secured cloud infrastructure using AWS Console and GitHub Actions
