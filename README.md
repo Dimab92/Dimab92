@@ -63,28 +63,28 @@ Covering the full CI flow: code checkout, linting, testing, Docker image build, 
 
 Configuring support for both GitHub-hosted and self-hosted runners, following security and CI best practices.
 
-## Cloud & AWS Services:
+## AWS Integration:
 Configured and secured cloud infrastructure using AWS Console and GitHub Actions
 
-IAM & User Management:
+IAM:
 
 Created and configured IAM users with read-only permissions for multiple team members
 
 Used least privilege principle to assign roles and permissions
 
-Compute (EC2):
+EC2:
 
 Deployed a Virtual Machine (EC2) instance with Elastic IP
 
 Attached custom IAM role to allow secure ECR access
 
-Container Registry (ECR):
+ECR:
 
 Created and configured a private ECR registry
 
 Built secure GitHub Actions pipeline to push Docker images to ECR using minimal IAM permissions
 
-Storage (S3):
+S3:
 
 Created an S3 bucket 
 
