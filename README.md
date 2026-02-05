@@ -86,7 +86,7 @@ Built secure GitHub Actions pipeline to push Docker images to ECR using minimal 
 
 Storage (S3):
 
-Created an S3 bucket named devops-intern-$GITHUB_USERNAME
+Created an S3 bucket 
 
 Modified backup.sh pipeline to:
 
@@ -98,7 +98,7 @@ Upload updated versions.json and archive to S3
 
 CI/CD Integration with GitHub:
 
-Connected GitHub to AWS using OIDC (OpenID Connect) for secure, token-based access (no secrets exposed)
+Connected GitHub to AWS
 
 Integrated AWS services into CI/CD pipeline using environment-specific roles
 
