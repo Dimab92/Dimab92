@@ -66,41 +66,15 @@ Configuring support for both GitHub-hosted and self-hosted runners, following se
 ## AWS Integration:
 Configured and secured cloud infrastructure using AWS Console and GitHub Actions
 
-IAM:
+Connecting GitHub to AWS and integrating ECR and S3 into CI/CD pipelines via secure, environment-specific roles
 
-Created and configured IAM users with read-only permissions for multiple team members
+IAM: Creating IAM users with read-only access and separate service roles using the least-privilege principle
 
-Used least privilege principle to assign roles and permissions
+EC2 & EIP: Deploying an EC2 instance with Elastic IP and attaching a dedicated IAM role
 
-EC2:
+ECR: Setting up a private ECR registry and configuring GitHub Actions to push Docker images with minimal permissions
 
-Deployed a Virtual Machine (EC2) instance with Elastic IP
-
-Attached custom IAM role to allow secure ECR access
-
-ECR:
-
-Created and configured a private ECR registry
-
-Built secure GitHub Actions pipeline to push Docker images to ECR using minimal IAM permissions
-
-S3:
-
-Created an S3 bucket 
-
-Modified backup.sh pipeline to:
-
-Download versions.json from S3
-
-Update backup metadata
-
-Upload updated versions.json and archive to S3
-
-CI/CD Integration with GitHub:
-
-Connected GitHub to AWS
-
-Integrated AWS services into CI/CD pipeline using environment-specific roles
+S3 & Backups: Implementing automated backups to S3, including downloading, updating, and uploading versions.json with backup artifacts
 
 ## Cloud Deployment & Automation:
 Automated the full deployment pipeline from GitHub to cloud VM using Docker and GitHub Actions.
