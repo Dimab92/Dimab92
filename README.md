@@ -64,8 +64,6 @@ Covering the full CI flow: code checkout, linting, testing, Docker image build, 
 Configuring support for both GitHub-hosted and self-hosted runners, following security and CI best practices.
 
 ## AWS Integration:
-Configured and secured cloud infrastructure using AWS Console and GitHub Actions
-
 Connecting GitHub to AWS and integrating ECR and S3 into CI/CD pipelines via secure, environment-specific roles
 
 IAM: Creating IAM users with read-only access and separate service roles using the least-privilege principle
