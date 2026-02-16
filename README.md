@@ -80,11 +80,10 @@ Automated the full deployment pipeline from GitHub to AWS (EC2) using GitHub Act
 Creating docker-compose-file to deploy production-ready services using prebuilt images from ECR
 
 ## Infrastructure as Code (IaC) with Terraform:
-Provisioned production-grade infrastructure on AWS using Terraform with focus on scalability, automation, and cost-efficiency (Free Tier).
 
-### Key Components Deployed:
+### ECS Cluster:
 
-ECS Cluster: Created ECS cluster terraform-ecs-cluster-$GITHUB_USERNAME with EC2 capacity provider and autoscaling group (bootstrapped via user data)
+Created ECS cluster terraform-ecs-cluster-$GITHUB_USERNAME with EC2 capacity provider and autoscaling group (bootstrapped via user data)
 
 Containerized Task Definition: Deployed multi-container task with:
 
