@@ -75,13 +75,9 @@ ECR: Setting up a private ECR registry and configuring GitHub Actions to push Do
 S3 & Backups: Implementing automated backups to S3, including downloading, updating, and uploading versions.json with backup artifacts
 
 ## Cloud Deployment & Automation:
-Automated the full deployment pipeline from GitHub to cloud VM using Docker and GitHub Actions.
+Automated the full deployment pipeline from GitHub to AWS (EC2) using GitHub Actions
 
-Docker Compose (Production):
-
-Created docker-compose-prod.yaml to deploy production-ready services (Nginx, Backend, Frontend) using prebuilt images from private container registry
-
-Ensured separation of development and production environments
+Creating docker-compose-file to deploy production-ready services using prebuilt images from ECR
 
 ## Infrastructure as Code (IaC) with Terraform:
 Provisioned production-grade infrastructure on AWS using Terraform with focus on scalability, automation, and cost-efficiency (Free Tier).
