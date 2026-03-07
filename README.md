@@ -42,19 +42,9 @@ Experience writing Bash scripts to automate routine tasks like backups, cron job
 Troubleshooting: identifying and resolving system, network, and application issues to ensure smooth operations
 
 ## Docker and Docker Compose:
-Full Dockerization of the application with Nginx or Traefik configured as a reverse proxy
+Full Dockerization of the application with Nginx or Nginx + Traefik as a reverse proxy.
+Multi-container architecture using Docker Compose with services: Backend API, Frontend app, PostgreSQL, Reverse Proxy
 
-Building multi-container architecture using Docker Compose
-
-Configured services for:
-
-Backend API
-
-Frontend app
-
-PostgreSQL database
-
-Nginx or Traefik as reverse proxy
 
 ## GitHub Actions:
 Creating CI pipelines for backend, frontend, nginx, traefik, custom scripts using GitHub Actions:
