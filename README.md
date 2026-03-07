@@ -70,25 +70,17 @@ Automated the full deployment pipeline from GitHub to AWS (EC2) using GitHub Act
 
 Creating docker-compose-file to deploy production-ready services using prebuilt images from ECR
 
-## Infrastructure as Code (IaC) with Terraform:
+## Terraform | AWS Infrastructure:
 
 ### ECS Cluster:
 
-Created ECS cluster terraform-ecs-cluster-$GITHUB_USERNAME with EC2 capacity provider and autoscaling group (bootstrapped via user data)
+Creating ECS cluster with EC2 capacity provider and autoscaling group vith user data
 
-Containerized Task Definition: Deployed multi-container task with:
+Containerized Task Definition: Deployed multi-container task with: Frontend, Backend, Traefik, PostgreSQL
 
-Frontend
+Security Groups configured using the least-privilege principle
 
-Backend
-
-Nginx
-
-PostgreSQL database
-
-Security Groups: Designed using least-privilege principle
-
-Application Load Balancer (ALB): Configured listener rules and health checks for seamless routing to ECS tasks
+Application Load Balancer with routing to ECS services
 
 ### State Management:
 
@@ -100,20 +92,6 @@ Enabled state locking with DynamoDB for safe team collaboration
 
 Integrated GitHub Actions to:
 
-Trigger deployment on push to main or workflow_dispatch
-
 Push Docker images to ECR
 
 Update ECS task and service without downtime
-
-Retained workflow naming for consistent automation control
-
-### Best Practices:
-
-Defined Terraform version for stability
-
-Used cost-effective Free Tier AWS instances
-
-Removed old EC2 + Elastic IP setup after migration to ECS
-
-Application successfully served via Load Balancer DNS
