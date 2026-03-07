@@ -29,20 +29,21 @@ Here are some ideas to get you started:
 
 
 ## Virtualization | Bash and Bash Scripting:
-VirtualBox hypervisor: installation, configuration, and management of virtual machines
+VirtualBox hypervisor: VM installation, configuration, and management
 
-Installing and configuring UNIX-based OS in a virtualized environment
+Installing and configuring UNIX-based OS in virtual environments
 
-Performing system updates and package upgrades using the command line
+System updates and package management via CLI
 
-Setting up and configuring essential tools required for server functionality
+Setting up essential server tools required for server functionality
 
 Experience writing Bash scripts to automate routine tasks like backups, cron jobs, and system maintenance
 
 Troubleshooting: identifying and resolving system, network, and application issues to ensure smooth operations
 
 ## Docker and Docker Compose:
-Full Dockerization of the application with Nginx or Nginx + Traefik as a reverse proxy.
+Full Dockerization of the application with Nginx or Nginx + Traefik as a reverse proxy
+
 Multi-container architecture using Docker Compose with services: Backend API, Frontend app, PostgreSQL, Reverse Proxy
 
 
