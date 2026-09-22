@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-![VirtualBox](https://img.shields.io/badge/VirtualBox-8A2BE2?logo=virtualbox&logoColor=white&style=for-the-badge&logoWidth=30)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge&logoWidth=30)
 ![Bash](https://img.shields.io/badge/Bash-7ED957?logo=gnu-bash&logoColor=white&style=for-the-badge&logoWidth=30) 
 ![Bash scripting](https://img.shields.io/badge/Bash%20Scripting-2E8B57?logo=gnubash&logoColor=white&style=for-the-badge&logoWidth=30) 
 ![Networking](https://img.shields.io/badge/Networking-F4D35E?logo=cloudflare&logoColor=white&style=for-the-badge)
@@ -81,12 +81,6 @@ Containerized Task Definition: Deployed multi-container task with: Frontend, Bac
 Security Groups configured using the least-privilege principle
 
 Application Load Balancer with routing to ECS services
-
-### State Management:
-
-Stored Terraform state in S3
-
-Enabled state locking with DynamoDB for safe team collaboration
 
 ### CI/CD Integration:
 
